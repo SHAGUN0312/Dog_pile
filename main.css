@@ -1,0 +1,83 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #000;
+    color: whitesmoke;
+}
+
+.main{
+    /* yaha display- flex and all other properties are given so that we can give absolute positioning to the child element. */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1{
+    margin: 0 0 10px 0;
+    padding-bottom: 15px;
+}
+
+.header select{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.slideshow{
+    flex: 1;
+    position: relative;
+    /* background-color: #fff; */
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: 0;
+    transform: scale(1);
+    transition: all 1.5s ease-out;
+}
+
+.slide:nth-last-child(2){
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
